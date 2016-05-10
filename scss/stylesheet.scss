@@ -1,3 +1,54 @@
-.hiw-body {
+/* flexbox mixins */
 
+@mixin flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+}
+
+@mixin flex-align-items ($direction: center) {
+    -webkit-align-items: $direction;
+    -ms-align-items: $direction;
+    -moz-align-items: $direction;
+    align-items: $direction;
+}
+
+@mixin flex-align-self ($direction: center) {
+    -webkit-align-self: $direction;
+    -ms-align-self: $direction;
+    -moz-align-self: $direction;
+    align-self: $direction;
+}
+
+@mixin flex-direction ($type: row) {
+    -webkit-flex-direction: $type;
+    -ms-flex-direction: $type;
+    -moz-flex-direction: $type;
+    flex-direction: $type;
+}
+
+@mixin flex-justify-content ($direction: center) {
+    -webkit-justify-content: $direction;
+    -ms-justify-content: $direction;
+    -moz-justify-content: $direction;
+    justify-content: $direction;
+}
+
+@mixin flex-wrap($wrap: wrap) {
+    -webkit-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+/* how it works (hiw) styles */
+
+.hiw-body {
+    @include flex;
+    @include flex-direction(column);
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
