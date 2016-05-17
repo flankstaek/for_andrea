@@ -1,4 +1,5 @@
 /* flexbox mixins */
+/* mixin for smiley face bullet points in features section */
 /* how it works (hiw) styles */
 .hiw-body {
   display: -ms-flexbox;
@@ -64,3 +65,81 @@
     margin: 0 auto;
     max-width: 795px;
     text-align: center; }
+
+.hiw-programs-and-features {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 50px; }
+  .hiw-programs-and-features .hiw-programs-features-header {
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center; }
+  .hiw-programs-and-features .hiw-features-emphasis {
+    color: #29abe2;
+    font-weight: 400; }
+  .hiw-programs-and-features .hiw-programs-features-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .hiw-programs-and-features .hiw-program-features {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    margin-right: 4%;
+    max-width: 340px; }
+    .hiw-programs-and-features .hiw-program-features:last-of-type {
+      margin-right: 0; }
+  .hiw-programs-and-features .hiw-features-header {
+    border-bottom: 1px solid #29abe2;
+    color: #29abe2;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center; }
+  .hiw-programs-and-features .hiw-features-intro {
+    margin: 0 auto 15px auto;
+    text-align: center;
+    max-width: 320px; }
+  .hiw-programs-and-features .hiw-features-list {
+    position: relative;
+    max-width: 400px; }
+    .hiw-programs-and-features .hiw-features-list li:before {
+      background-image: url("../images/checkmark-blue.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      content: '';
+      height: 13px;
+      left: 13px;
+      margin-top: 5px;
+      position: absolute;
+      width: 13px; }
+  .hiw-programs-and-features .hiw-features-list-items {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 10px 35px; }
