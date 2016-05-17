@@ -142,3 +142,50 @@
     font-size: 14px;
     font-weight: 300;
     margin: 0 0 10px 35px; }
+
+.hiw-programs-toggle {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  padding: 50px; }
+  .hiw-programs-toggle .hiw-programs-toggle-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center; }
+  .hiw-programs-toggle .hiw-toggle-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .hiw-programs-toggle .hiw-toggle {
+    background-color: #2c3e50;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-right: 3%;
+    padding: 10px;
+    text-align: center;
+    width: 215px; }
+    .hiw-programs-toggle .hiw-toggle:last-of-type {
+      margin-right: 0; }
+    .hiw-programs-toggle .hiw-toggle:hover {
+      background-color: #29abe2;
+      transition: all 2s; }
