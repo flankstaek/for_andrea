@@ -252,7 +252,8 @@
   font-weight: 700;
   margin-bottom: 25px; }
 .hiw-programs-steps .hiw-programs-content-list {
-  position: relative; }
+  position: relative;
+  max-width: 1000px; }
   .hiw-programs-steps .hiw-programs-content-list li:before {
     background-image: url("../images/checkmark-blue.svg");
     background-size: contain;
@@ -263,8 +264,16 @@
     margin-top: 5px;
     position: absolute;
     width: 13px; }
+  .hiw-programs-steps .hiw-programs-content-list li:before {
+    margin-top: 7px; }
 .hiw-programs-steps .hiw-programs-content-list-item {
-  margin: 0 0 10px 35px; }
+  font-size: 18px;
+  margin: 0 0 15px 35px; }
+  .hiw-programs-steps .hiw-programs-content-list-item:last-of-type {
+    margin-bottom: 0; }
+.hiw-programs-steps .hiw-list-item-bold {
+  font-size: 20px;
+  font-weight: 700; }
 .hiw-programs-steps .hiw-programs-rhythm {
   background-color: #2C3E50;
   height: 335px;

@@ -260,9 +260,21 @@
     }
     .hiw-programs-content-list {
         @include plan-item-smiley;
+        max-width: 1000px;
+        li:before {
+            margin-top: 7px;
+        }
     }
     .hiw-programs-content-list-item {
-        margin: 0 0 10px 35px;
+        font-size: 18px;
+        margin: 0 0 15px 35px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .hiw-list-item-bold {
+        font-size: 20px;
+        font-weight: 700;
     }
     .hiw-programs-rhythm {
         background-color: #2C3E50;
