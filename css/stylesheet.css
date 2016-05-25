@@ -144,8 +144,7 @@
 
 .hiw-programs-steps .hiw-programs-start {
   background-color: #2C3E50;
-  height: 705px;
-  z-index: 0; }
+  height: 705px; }
 .hiw-programs-steps .hiw-programs-start-bg {
   opacity: 0.3;
   position: absolute;
@@ -362,8 +361,7 @@
     font-weight: 700;
     margin-bottom: 15px; }
   .hiw-ctas .hiw-ctas-testimonial-blurb {
-    font-size: 15px;
-    margin-bottom: 15px; }
+    font-size: 15px; }
   .hiw-ctas .hiw-ctas-testimonial-label {
     color: #f7931e;
     font-size: 14px;
