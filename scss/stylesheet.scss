@@ -246,6 +246,9 @@
         top: 505px;
         z-index: 2;
     }
+    .hiw-programs-content-header-emphasis {
+        color: #29abe2;
+    }
     .hiw-programs-content {
         @include flex;
         @include flex-direction(column);
@@ -259,7 +262,7 @@
     }
     .hiw-programs-content-list {
         @include plan-item-smiley;
-        max-width: 1000px;
+        max-width: 990px;
         li:before {
             margin-top: 7px;
         }
@@ -404,13 +407,13 @@
     .hiw-inspiration-testimonial-blurb {
         font-size: 32px;
         font-weight: 700;
-        margin: 0 auto;
+        margin: 0 auto 10px auto;
         max-width: 960px;
         text-align: center;
     }
     .hiw-inspiration-testimonial-label {
         color: #2c3e50;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 700;
         margin: 0 auto;
         max-width: 960px;
