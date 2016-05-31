@@ -15,6 +15,27 @@
   font-size: 16px;
   line-height: 1.5; }
 
+.coaching-selected .hiw-programs-advisor {
+  display: none !important; }
+.coaching-selected .hiw-programs-coaching {
+  display: block; }
+.coaching-selected .hiw-programs-coaching-plus {
+  display: none !important; }
+
+.advisor-selected .hiw-programs-advisor {
+  display: block; }
+.advisor-selected .hiw-programs-coaching {
+  display: none !important; }
+.advisor-selected .hiw-programs-coaching-plus {
+  display: none !important; }
+
+.coaching-plus-selected .hiw-programs-advisor {
+  display: none !important; }
+.coaching-plus-selected .hiw-programs-coaching {
+  display: none !important; }
+.coaching-plus-selected .hiw-programs-coaching-plus {
+  display: block; }
+
 .hiw-hero {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -193,6 +214,7 @@
   border: 3px solid #2c3e50;
   border-radius: 5px;
   color: #2c3e50;
+  cursor: pointer;
   font-weight: 700;
   margin-right: 3%;
   padding: 10px;

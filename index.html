@@ -7,9 +7,32 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css' />
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/stylesheet.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
 
-<body class="hiw-body">
+<body class="hiw-body coaching-selected">
+    <script type="text/javascript">
+        function changeSelection(event) {
+            $(".hiw-toggle-selected").removeClass("hiw-toggle-selected");
+            $(event.target).addClass("hiw-toggle-selected");
+            var target = $("body")
+            if (event.target.textContent === "Advisor") {
+                target.removeClass("coaching-selected");
+                target.removeClass("coaching-plus-selected");
+                target.addClass("advisor-selected");
+            }
+            else if (event.target.textContent === "Coaching") {
+                target.removeClass("advisor-selected");
+                target.removeClass("coaching-plus-selected");
+                target.addClass("coaching-selected");
+            }
+            else if (event.target.textContent === "Coaching Plus") {
+                target.removeClass("advisor-selected");
+                target.removeClass("coaching-selected");
+                target.addClass("coaching-plus-selected");
+            }
+        }
+    </script>
 
     <section class="hiw-hero">
         <h1 class="hiw-hero-blurb">Don&rsquo;t waste time. Testive will show you <span class="hiw-hero-blurb-blue">the smart way to prep.</span></h1>
@@ -67,9 +90,9 @@
             <div class="hiw-programs-toggle">
                 <h2 class="hiw-programs-toggle-header">Want to make the most of your Testive experience? Pick a program to find out how it works:</h2>
                 <div class="hiw-toggle-row">
-                    <a class="hiw-toggle" href="#" alt="Advisor Program">Advisor</a>
-                    <a class="hiw-toggle hiw-toggle-selected" href="#" alt="Coaching Program">Coaching</a>
-                    <a class="hiw-toggle" href="#" alt="Coaching Plus Program">Coaching Plus</a>
+                    <span class="hiw-toggle" alt="Advisor Program" onclick="changeSelection(event)">Advisor</span>
+                    <span class="hiw-toggle hiw-toggle-selected" alt="Coaching Program" onclick="changeSelection(event)">Coaching</span>
+                    <span class="hiw-toggle" alt="Coaching Plus Program" onclick="changeSelection(event)">Coaching Plus</span>
                 </div>
             </div>
             <div class="hiw-programs-start-header">
